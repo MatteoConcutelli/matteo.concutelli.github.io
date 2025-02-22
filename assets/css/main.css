@@ -1,0 +1,284 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: STANLEY - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+:root {
+    --primary-dark: #222831;    /* Main dark color */
+    --secondary-dark: #31363F;  /* Secondary dark */
+    --accent-teal: #76ABAE;     /* Muted teal accent */
+    --light-gray: #EEEEEE;      /* Light background */
+	--body-color: #8b7e7e3f; 
+	--font-color: #555;
+	--line-color: #ccc;
+	--nav-bar-font-color: rgb(87, 131, 80);
+}
+
+body {
+
+  	background-color: var(--body-color);
+  	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--font-color);
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--secondary-dark);
+}
+
+h1 {
+	font-size: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: var(--accent-teal);
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: var(--secondary-dark);
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--line-color);
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.navbar {
+	position: fixed;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+.navbar-inverse {
+	padding-bottom: 1%;
+	padding-top: 1%;
+}
+
+.navbar-inverse {
+	background-color: var(--primary-dark);
+	/*border-color: var(--secondary-dark);*/
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: var(--nav-bar-font-color);
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #222222;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+}
+
+.progress-bar-theme {
+  background-color: var(--accent-teal);
+}
+
+
+/* Helpers */
+
+.mt {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.pt {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+/* +++++ WRAP SECTIONS +++++ */
+
+#ww {
+	padding-top: 7%;
+	padding-bottom: 7%;
+
+	position: relative;
+	overflow: hidden;
+	
+	/*background-color: var(--light-gray);*/
+}
+
+#ww::before {
+	
+	content:'';
+	position: absolute;
+	
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	/*background-image: url('/assets/img/portfolio/shutterstock.jpg');*/
+	background-size: cover;
+	background-position: center;
+	
+	filter: blur(5px); /* Adjust blur intensity */
+    z-index: 0;
+    opacity: 1; /* Adjust image transparency */
+}
+
+#ww .container {
+	position: relative;
+    z-index: 1;
+}
+
+
+#footer {
+	background-color: #2f2f2f;
+	padding-top: 50px;
+	padding-bottom: 50px; 
+}
+
+#footer p {
+	color: white;
+}
+
+#footer h4 {
+	color: white;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+
+/* +++++ Color Wraps / Blog Page +++++ */
+
+#grey {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f2f2f2;
+}
+
+#white {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #ffffff;
+}
+
+
+
+/* Blog Date*/
+bd {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #d2d2d2;
+	font-weight: 700;
+}
+
+/* Blog Author*/
+ba {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/* Blog Quote */
+.bq {
+	font-size: 22px;
+	padding-top: 30px;
+}
+
+/* Blog Tags */
+bt {
+	font-size: 12px;
+}
+
+/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
+/* Effects also are controled by hover.zoom.js */
+.zoom { 
+    display:block; 
+    position:relative; 
+    overflow:hidden; 
+    background:transparent url(../img/loader.gif) no-repeat center;
+}
+
+
+.zoomOverlay {
+	position:absolute;
+	top:0; left:0;
+	bottom:0; right:0;
+	display:none;
+	background-image:url(../img/zoom.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.zoom2 {
+	opacity: 1;
+}
+
+.zoom2:hover {
+	opacity: 0.5;
+}
+
+/* glyphicon Configuration */
+
+.glyphicon {
+	font-size: 40px;
+	color: #1abc9c;
+}
